@@ -74,6 +74,7 @@ void display() { //prosedur untuk menampilkan
 
 int main()
 {
+
     input();
     bubbleSortArray();
     display();
