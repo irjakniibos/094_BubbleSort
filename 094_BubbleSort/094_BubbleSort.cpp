@@ -8,7 +8,7 @@ int n;       //deklarasi variabel global n untuk menyimpan banyaknya elemen pada
 void input() { //prosedur untuk input
     
     while (true) {
-        cout << "Masukan banyaknya elemen pada array  output ke layar"; // Output ke layar
+        cout << "Masukan banyaknya elemen pada array "; // Output ke layar
         cin >> n;    // input dari pengguna
         if (n <= 20) // jika n kurang dari atau sama dengan 20
             break;   // keluar dari loop
@@ -17,9 +17,9 @@ void input() { //prosedur untuk input
         }
     }
     cout << endl;
-    cout << "===============" << endl;
+    cout << "=====================" << endl;
     cout << "Masukan Elemen Array" << endl;
-    cout << "===============" << endl;
+    cout << "=====================" << endl;
 
     for (int i = 0; i < n; i++) {            //looping dengan i dimulai dari 0 hingga n-1 
         cout << "Data ke-" << (i + 1) << ":";// output ke layar
@@ -67,7 +67,6 @@ void display() { //prosedur untuk menampilkan
     cout << "Jumlah pass = " << n - 1 << endl; //menampilkan jumlah pass
     cout << endl;
     cout << endl;
-
 }
 
 
@@ -75,5 +74,10 @@ void display() { //prosedur untuk menampilkan
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    input();
+    bubbleSortArray();
+    display();
+
+    system("pause");
+    return 0;
 }
